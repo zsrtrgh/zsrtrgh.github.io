@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>zsrtrgh</title>
+    <script src="https://unpkg.com/budoux/bundle/budoux-ja.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKV30Q4BFD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-XKV30Q4BFD");
+    </script>
+</head>
+<body>
+    <div id="top">
+        <div id="word">
+            <p id="yomi"></p>
+            <h1 id="yojijukugo"></h1>
+            <hr>
+            <div>
+                <p><budoux-ja id="meaning"></budoux-ja></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="cards">
+            <a href="https://github.com/zsrtrgh" class="card">
+                <object type="image/svg+xml" data="svg/github.svg"></object>
+            </a>
+            <a href="https://twitter.com/zsrtrgh" class="card">
+                <object type="image/svg+xml" data="svg/twitter.svg"></object>
+            </a>
+        </div>
+    </footer>
+    <img src="bg.jpeg" alt="sea" id="bg">
+    <script src="index.js"></script>
+</body>
+</html>
