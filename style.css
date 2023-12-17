@@ -73,6 +73,7 @@ hr {
     width: fit-content;
     font-family: 'ShipporiGothic', cursive;
     font-size: .8em;
+    line-height: 1;
     padding: .4em;
     color: var(--y);
     border: 2px solid var(--y);
