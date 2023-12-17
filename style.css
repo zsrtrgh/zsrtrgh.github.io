@@ -72,9 +72,9 @@ hr {
 #yomi {
     width: fit-content;
     font-family: 'ShipporiGothic', cursive;
-    font-size: .8em;
+    font-size: .84em;
     line-height: 1;
-    padding: .4em;
+    padding: .42em;
     color: var(--y);
     border: 2px solid var(--y);
     border-radius: .8em;
