@@ -30,6 +30,10 @@ window.onload = function () {
                     }
             );
 
+            //////////////// Plugin 
+
+            gsap.registerPlugin(ScrollTrigger);
+
             ////////////////
 
 
@@ -75,6 +79,21 @@ window.onload = function () {
                 delay: 1,
                 duration: 3,
                 ease: 'elastic.inOut',
+            });
+
+            ////////////////
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: "footer",
+                    start: "top center",
+                },
+            })
+            .from("#card", {
+                scale: 0,
+                y: 100,
+                duration: 1,
+                ease: 'bounce.out'
             });
 
             ////////////////

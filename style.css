@@ -8,7 +8,7 @@
   --g: #496f5d;
   --c: #037171;
   --y: #b0f2b4;
-  --radius: 8px;
+  --radius: 10px;
   font-size: 18px;
 }
 
@@ -17,7 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--w);
-  font-family: ShipporiGothic;
+  font-family: ShipporiGothic, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -116,6 +116,7 @@ h2 {
 h3 {
   color: var(--g);
   padding-top: 0.5em;
+  font-weight: normal;
 }
 #card p {
   color: var(--b);
@@ -191,6 +192,10 @@ h3 {
     height: auto;
     object-fit: cover;
     aspect-ratio: 1;
+    order: 1;
+  }
+  #profile {
+    order: 2;
   }
 }
 #photo,
