@@ -78,23 +78,6 @@ window.onload = function () {
             });
 
             ////////////////
-
-            gsap.fromTo(
-                ".card", // アニメーションさせる要素
-                {
-                    autoAlpha: 0,
-                },
-                {
-                    autoAlpha: 1,
-                    duration: 3,
-                    scrollTrigger: {
-                    trigger: ".card",
-                    start: "bottom center",
-                    },
-                }
-            );
-
-            ////////////////
         }
     );
 };

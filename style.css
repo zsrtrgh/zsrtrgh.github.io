@@ -1,154 +1,211 @@
 @font-face {
-    font-family: 'ShipporiGothic';
-    src: url('ShipporiGothicB2-Bold.woff') format('woff');
+  font-family: "ShipporiGothic";
+  src: url("ShipporiGothicB2-Bold.woff") format("woff");
 }
-:root{
-    --b: #0E100F;
-    --w: #CFD6EA;
-    --g: #496F5D;
-    --c: #037171;
-    --y: #B0F2B4;
-    font-size: 18px;
+:root {
+  --b: #0e100f;
+  --w: #cfd6ea;
+  --g: #496f5d;
+  --c: #037171;
+  --y: #b0f2b4;
+  --radius: 8px;
+  font-size: 18px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;color: var(--w);
-    font-family: ShipporiGothic;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--w);
+  font-family: ShipporiGothic;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 body {
-    width: 100%;
+  width: 100%;
+  background-color: var(--b);
 }
 
 #top {
-    height:100vh;
-    background-color: var(--b);
-    /* center */
-    position: relative;
+  height: 100vh;
+  background-color: var(--b);
+  /* center */
+  position: relative;
 }
 
-#top>#word {
-    width: 400px;
-    /* center */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+#top > #word {
+  width: 400px;
+  /* center */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
-    /* hidden */
-    display: none;
+  /* hidden */
+  display: none;
 }
-
 
 #word {
-    padding: 0 3vw;
+  padding: 0 3vw;
 }
-h1{
-    font-weight: normal;
-    font-family: 'ShipporiGothic', cursive;
-    font-size: 3.6rem;
-    padding: 0.2em 0;
-    min-width: 4.2em;
-    line-height: 1.2em;
+h1 {
+  font-weight: normal;
+  font-family: "ShipporiGothic", cursive;
+  font-size: 3.6rem;
+  padding: 0.2em 0;
+  min-width: 4.2em;
+  line-height: 1.2em;
 }
 hr {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    height: .2em;
-    margin-bottom: 0.5rem;
-    border-radius: 10px;
-    background-color: var(--c);
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 0.2em;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--c);
 }
 #yomi {
-    width: fit-content;
-    font-family: 'ShipporiGothic', cursive;
-    font-size: .84em;
-    line-height: 1;
-    padding: .42em;
-    color: var(--y);
-    border: 2px solid var(--y);
-    border-radius: .8em;
+  width: fit-content;
+  font-family: "ShipporiGothic", cursive;
+  font-size: 0.84em;
+  line-height: 1;
+  padding: 0.42em;
+  color: var(--y);
+  border: 2px solid var(--y);
+  border-radius: 0.8em;
 }
-#meaning>* {
-    font-size: 1.2rem;
-    line-height: 1.5em;
+#meaning > * {
+  font-size: 1.2rem;
+  line-height: 1.5em;
 }
-#meaning>*::before {
-    font-size: 1.2rem;
-    line-height: 1.5em;
-}
-
-@media screen and (max-width:400px) {
-    #top>#word {
-        width: 100%;
-    }
+#meaning > *::before {
+  font-size: 1.2rem;
+  line-height: 1.5em;
 }
 
+@media screen and (max-width: 400px) {
+  #top > #word {
+    width: 100%;
+  }
+}
 
 footer {
-    width: 100%;
-    max-width: 800px;
-    padding: 4vh 4vh;
-    margin: 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 60vh;
+  position: relative;
 }
 
-.cards {
-    padding: 0 2em 0;
-    display: grid;
-    gap: 1em;
-    place-content: center;
-    grid-template-columns:
-        repeat(auto-fit, minmax(150px, 1fr));
-    max-width: 3fr;
+h2,
+h3,
+p {
+  line-height: 1em;
 }
-
-.card {
-    background-color: var(--b);
-    padding: 16px;
-    width: 100%;
-    border: 2px solid var(--b);
-    min-height: 200px;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+h2 {
+  color: var(--c);
+  padding-bottom: 0.5em;
 }
-.card:hover {
-    transition-duration: 0.4s;
-    background-color: var(--g);
-    border: none;
-    transform: scale(1.02);
+h3 {
+  color: var(--g);
+  padding-top: 0.5em;
 }
-
-object {
-    width: 100px;
-    transform: scale(0.6);
-    height: auto;
+#card p {
+  color: var(--b);
+  padding-top: 0.4em;
 }
+#card h3 {
+  padding-left: 0.5em;
+}
+#card p {
+  padding-left: 2em;
+}
+#profile {
+  grid-area: profile;
+  padding: 1em;
+}
+#photo {
+  border-radius: 0 var(--radius) var(--radius) 0;
+  grid-area: photo;
+  background-color: var(--c);
+  display: block;
+  height: auto;
+  max-height: 300px;
+  aspect-ratio: 1;
+}
+#card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-sizing: border-box;
+  min-height: 300px;
+  max-width: calc(100vw - 4em);
+  min-width: 600px;
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: var(--radius);
+  margin: 1em;
+  background-color: var(--w);
+  border-left: var(--c) calc(var(--radius) * 1.2) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-template-areas: "profile photo";
+}
 #bg {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 40vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  height: 60vh;
+  width: 100%;
+  filter: grayscale(0.9);
+}
+@media screen and (max-width: 800px) {
+  #card {
+    border-left: none;
+    border-top: var(--c) calc(var(--radius) * 1.2) solid;
+    margin: 0;
+    min-height: none;
+    width: 50%;
+    max-width: calc(100vw - 2em);
+    min-width: 300px;
+
+    flex-direction: column;
+    justify-content: space-between;
+    grid-template-columns: "photo profile";
+  }
+  #photo {
+    border-radius: 0 0 var(--radius) var(--radius);
+    display: block;
+    height: auto;
     object-fit: cover;
-    filter:grayscale(0.9);
+    aspect-ratio: 1;
+  }
+}
+#photo,
+#bg {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
 }
 
 /* animation */
 
 span {
-    display: inline-block;
+  display: inline-block;
 }
