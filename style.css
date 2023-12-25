@@ -112,6 +112,7 @@ p {
   line-height: 1em;
 }
 #card h2 {
+  text-transform: capitalize;
   color: var(--c);
   padding-bottom: 0.5em;
   font-family: Inter;
