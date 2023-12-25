@@ -115,7 +115,7 @@ p {
   text-transform: capitalize;
   color: var(--c);
   padding-bottom: 0.5em;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 800;
   font-size: 2em;
 }
