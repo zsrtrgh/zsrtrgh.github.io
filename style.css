@@ -2,6 +2,7 @@
   font-family: "ShipporiGothic";
   src: url("ShipporiGothicB2-Bold.woff") format("woff");
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 :root {
   --b: #0e100f;
   --w: #cfd6ea;
@@ -110,23 +111,25 @@ h3,
 p {
   line-height: 1em;
 }
-h2 {
+#card h2 {
   color: var(--c);
   padding-bottom: 0.5em;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 2em;
 }
-h3 {
+#card h3 {
   color: var(--g);
-  padding-top: 0.5em;
+  padding-top: 0.6em;
   font-weight: normal;
+  padding-left: 0.5em;
+}
+#card h2+h3{
+  padding-top: 0px;
 }
 #card p {
   color: var(--b);
-  padding-top: 0.4em;
-}
-#card h3 {
-  padding-left: 0.5em;
-}
-#card p {
+  padding-top: 0.5em;
   padding-left: 2em;
 }
 #profile {
@@ -169,7 +172,7 @@ h3 {
   display: flex;
   align-items: center;
   object-fit: cover;
-  height: 60vh;
+  height: 100vh;
   width: 100%;
   filter: grayscale(0.9);
 }
