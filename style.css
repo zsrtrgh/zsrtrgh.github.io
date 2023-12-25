@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 @font-face {
   font-family: "ShipporiGothic";
   src: url("ShipporiGothicB2-Bold.woff") format("woff");
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 :root {
   --b: #0e100f;
   --w: #cfd6ea;
