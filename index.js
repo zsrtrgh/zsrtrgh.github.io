@@ -100,3 +100,34 @@ window.onload = function () {
         }
     );
 };
+
+const wrapper = document.querySelector('#wrapper');
+if(wrapper) {
+    const panels = gsap.utils.toArray('.panel');
+    const wrapperWidth = wrapper.offsetWidth;
+    gsap.to( panels, {
+        xPercent: -100 * (panels.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: wrapper,
+            pin: true,
+            scrub: 1,
+            end: () => "+=" + wrapperWidth
+        }
+    })
+}
+// const wrapper2 = document.querySelector('#wrapper2');
+// if(wrapper2) {
+//     const panel2s = gsap.utils.toArray('.panel2');
+//     const wrapper2Width = wrapper2.offsetWidth;
+//     gsap.to( panel2s, {
+//         xPercent: -100 * (panel2s.length - 1),
+//         ease: "none",
+//         scrollTrigger: {
+//             trigger: wrapper2,
+//             pin: true,
+//             scrub: 1,
+//             end: () => "+=" + wrapper2Width
+//         }
+//     })
+// }
