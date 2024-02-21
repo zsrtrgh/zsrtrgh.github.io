@@ -248,6 +248,7 @@ p {
 .screens-panel > *{
   line-height: 1.5em;
   font-size: 1.5rem;
+  padding: 1em;
 }
 
 .panel:nth-child(1) {
